@@ -101,7 +101,7 @@
     left: 0;
     z-index: 10;
     height: 1px;
-    width: 110%; /* Make sure it spans the viewport width */
+    width: 150%; /* Make sure it spans the viewport width */
     background-color: #333;
   }
 
@@ -147,6 +147,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 687px) {
   .usedefault {
     font-size: 35px !important;
@@ -183,7 +185,90 @@
     left: 0;
     z-index: 10;
     height: 1px;
-    width: 240%; /* Make sure it spans the viewport width */
+    width: 135%; /* Make sure it spans the viewport width */
     background-color: #333;
+  }
+}
+@media screen and (max-width:600px){
+  .time_allocated_grid::after {
+    background-image: url("https://i.imgur.com/9LnZBpU.png");
+    position: absolute;
+    content: "";
+    bottom: 46.9%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 1px;
+    width: 160%; /* Make sure it spans the viewport width */
+    background-color: #333;
+  }
+}
+
+@media screen and (max-width:550px){
+  .time_allocated_grid::after {
+
+    width: 170%; /* Make sure it spans the viewport width */
+  }
+}
+
+
+@media screen and (max-width:536px){
+  .time_allocated_grid::after {
+
+    width: 180%; /* Make sure it spans the viewport width */
+  }
+}
+
+
+@media screen and (max-width:518px){
+  .time_allocated_grid::after {
+
+    width: 190%; /* Make sure it spans the viewport width */
+  }
+}
+
+
+@media screen and (max-width:470px){
+  .time_allocated_grid::after {
+
+    width: 200%; /* Make sure it spans the viewport width */
+  }
+}
+
+
+@media screen and (max-width:462px){
+  .time_allocated_grid::after {
+
+    width: 210%; /* Make sure it spans the viewport width */
+  }
+}
+
+@media screen and (max-width:442px){
+  .time_allocated_grid::after {
+
+    width: 220%; /* Make sure it spans the viewport width */
+  }
+}
+
+@media screen and (max-width:398px){
+  .time_allocated_grid::after {
+
+    width: 235%; /* Make sure it spans the viewport width */
+  }
+}
+
+
+@media screen and (max-width:380px){
+  .time_allocated_grid::after {
+
+    width: 250%; /* Make sure it spans the viewport width */
+  }
+}
+
+
+@media screen and (max-width:361px){
+  .time_allocated_grid::after {
+
+    width: 270%; /* Make sure it spans the viewport width */
   }
 }
