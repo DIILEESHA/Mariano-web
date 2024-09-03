@@ -11,8 +11,8 @@ const Address = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".address_container",
-        start: "top 60%", // Trigger animation when the top of the container hits 80% of the viewport
-        end: "bottom 20%", // End animation when the bottom of the container hits 20% of the viewport
+        start: "top 100%", // Trigger animation when the top of the container hits 80% of the viewport
+        end: "bottom 10%", // End animation when the bottom of the container hits 20% of the viewport
         toggleActions: "play none none none", // Play animation on enter
       },
       defaults: { ease: "power2.out" },
@@ -36,7 +36,7 @@ const Address = () => {
     tl.fromTo(
       ".address_sm_grid",
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, stagger: 0.3 }
+      { opacity: 1, y: 0, duration: 0.2, stagger: 0.05 }
     );
 
     // Animate address images
@@ -56,7 +56,7 @@ const Address = () => {
     tl.fromTo(
       ".address_loactor",
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.3 }
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.02 }
     );
   }, []);
 

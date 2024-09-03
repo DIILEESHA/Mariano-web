@@ -94,6 +94,7 @@
 @media screen and (max-width: 760px) {
   .calendar_grid {
     gap: 0px;
+    padding: 40px;
     row-gap: 20px;
   }
 

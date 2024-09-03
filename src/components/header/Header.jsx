@@ -15,12 +15,8 @@ const Header = () => {
 
     // Animate the other text
     tl.fromTo(
-      ".head .heado",
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
-      "-=0.8"
-    );
-
+      ".head, .heado",
+      { opacity: 0 }, { opacity: 1, duration: 1 });
     // Animate couple name
     tl.fromTo(".couple_name", { opacity: 0 }, { opacity: 1, duration: 1 });
 

@@ -10,8 +10,8 @@ const Kodi = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".kodi",
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top 100%",
+        end: "bottom 10%",
         toggleActions: "play none none none",
         scrub: true,
       },

@@ -101,7 +101,7 @@
     left: 0;
     z-index: 10;
     height: 1px;
-    width: 250%; /* Make sure it spans the viewport width */
+    width: 110%; /* Make sure it spans the viewport width */
     background-color: #333;
   }
 
@@ -183,7 +183,7 @@
     left: 0;
     z-index: 10;
     height: 1px;
-    width: 280%; /* Make sure it spans the viewport width */
+    width: 240%; /* Make sure it spans the viewport width */
     background-color: #333;
   }
 }

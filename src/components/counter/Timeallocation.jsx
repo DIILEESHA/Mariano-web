@@ -16,8 +16,8 @@ const Timeallocation = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".timer",
-        start: "top 70%",
-        end: "bottom 40%",
+        start: "top 100%",
+        end: "bottom 10%",
         toggleActions: "play none none none",
         scrub: true,
       },

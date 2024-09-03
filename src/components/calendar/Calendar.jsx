@@ -11,32 +11,32 @@ const Calendar = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".calendar",
-        start: "top 80%", // when the top of the calendar hits 80% of the viewport
-        end: "bottom 20%", // when the bottom of the calendar hits 20% of the viewport
-        toggleActions: "play none none none", // play animation when triggered
+        start: "top 105%",
+        end: "bottom 10%", 
+        toggleActions: "play none none none",
       },
       defaults: { ease: "power1.inOut" },
     });
 
-    // Animate header title characters
+
     tl.fromTo(
-      ".calendar_title ",
+      ".calendar_title",
       { opacity: 0, y: 10 },
-      { opacity: 1, y: 0, duration: 1, stagger: 0.1 }
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.05 }
     );
 
     tl.fromTo(
       ".calendar_title .cal",
       { opacity: 0, x: -20 },
-      { opacity: 1, x: 0, duration: 1 },
-      "-=0.5"
+      { opacity: 1, x: 0, duration: 0.8 }, // Reduced duration for faster load
+      "-=0.4" // Overlap to speed up the sequence
     );
 
     // Animate the actual date
     tl.fromTo(
       ".actual_date",
       { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 1 }
+      { opacity: 1, scale: 1, duration: 0.8 } // Reduced duration for faster load
     );
 
     // Animate the bottom line
@@ -44,24 +44,24 @@ const Calendar = () => {
       ".mas",
       { scaleX: 0 },
       { scaleX: 1, transformOrigin: "center", duration: 0.3 },
-      "-=0.5"
+      "-=0.4" // Overlap to speed up the sequence
     );
 
     // Animate calendar grid dates
     tl.fromTo(
       ".calendar_grid .sub_grid_date",
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }
+      { opacity: 1, y: 0, duration: 0.4, stagger: 0.05 } // Reduced duration and stagger for faster load
     );
 
     // Animate the heart icon (on the 27th)
     tl.fromTo(
       ".sub_grid_date.moha .heart_icon",
       { scale: 0, rotation: -360 },
-      { scale: 1.2, rotation: 0, duration: 1.5, ease: "elastic.out(1, 0.5)" }
+      { scale: 1.2, rotation: 0, duration: 1, ease: "elastic.out(1, 0.5)" } // Reduced duration for quicker load
     ).to(".sub_grid_date.moha .heart_icon", {
       scale: 1,
-      duration: 0.5,
+      duration: 0.4,
       ease: "power1.inOut",
     });
   }, []);
