@@ -1,0 +1,186 @@
+/* Base Styles */
+.timer {
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sub_title);
+}
+
+.time_allocated_grid {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+
+.loka {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  bottom: 46.4%;
+}
+
+.time_allocated_grid::after {
+  position: absolute;
+  content: "";
+  bottom: 45.8%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  width: 100%; /* Make sure it spans the viewport width */
+  background-color: #333;
+}
+.time_title {
+  font-size: 25px;
+  font-family: "england";
+  line-height: 150%;
+  font-weight: 500;
+
+}
+
+.time_allocated_sub_grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time_allocator_img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  object-fit: contain;
+}
+
+.crcle {
+  width: 13px;
+  height: 13px;
+  margin: 20px 0;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.time_allocated_image_section {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .time_allocated_grid {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .time_allocated_grid {
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+
+  .time_allocated_grid::after {
+    background-image: url("https://i.imgur.com/9LnZBpU.png");
+    position: absolute;
+    content: "";
+    bottom: 49.8%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 1px;
+    width: 250%; /* Make sure it spans the viewport width */
+    background-color: #333;
+  }
+
+  .time_allocated_grid::-webkit-scrollbar {
+    height: 5px;
+    background-color: #ddd;
+  }
+
+  .time_allocated_grid::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+
+  .time_allocated_grid::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+  }
+
+  .time_allocated_grid {
+    scrollbar-width: thin;
+    scrollbar-color: #aaa #ddd;
+  }
+
+  .time_allocated_sub_grid {
+    min-width: 150px;
+    flex-shrink: 0;
+  }
+
+  .crcle {
+    margin: 10px 0;
+  }
+
+  .time_title {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .timer {
+  }
+
+  .focus_time {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .usedefault {
+    font-size: 35px !important;
+    line-height: 150%;
+  }
+
+  .usedfaulter {
+    font-size: 20px !important;
+    line-height: 150%;
+  }
+
+  .time_title {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .timer{
+  padding: 20px 10px 40px 10px;
+
+  }
+
+  .focus_time {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  .time_allocated_grid::after {
+    background-image: url("https://i.imgur.com/9LnZBpU.png");
+    position: absolute;
+    content: "";
+    bottom: 46.9%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 1px;
+    width: 280%; /* Make sure it spans the viewport width */
+    background-color: #333;
+  }
+}

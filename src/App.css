@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "serif";
+  /* font-family: "hinsatic"; */
+  color: #333;
+
+  /* font-size: 50px; */
+}
+
+/* global colors */
+:root {
+  --main_title: #333;
+  --sub_title: #f2cb91;
+  --first_color_palte_of_dress: #f2cb91;
+  --second_color_palte_of_dress: #f7c93d;
+  --third_color_palte_of_dress: #f6d471;
+  --fourth_color_palte_of_dress: #c3aa60;
+}
+/* //caligraphy font declaration */
+
+@font-face {
+  font-family: "hinsatic";
+  src: url("./assets/fonts/claudy.woff2") format("woff2");
+  /* font-weight: 400; */
+  /* font-style: italic; */
+}
+
+/* other fonts */
+
+@font-face {
+  font-family: "serif";
+  src: url("./assets/fonts/youngestserif.woff2") format("woff2");
+  src: url("./assets/fonts/young.ttf") format("ttf");
+
+  font-weight: 300 !important;
+  /* font-style: italic; */
+}
+
+@font-face {
+  font-family: "england";
+  src: url(./assets/fonts/england.woff2) format("woff2");
+}
+
+.calligraphy_font_character {
+  font-family: "england";
+  font-weight: 400;
+  margin: 0 0px;
+  font-size: 80px;
+}
+
+.calligraphy_font_character_follow_title {
+  font-family: "england";
+
+  margin: 0 0px;
+  font-size: 40px;
+}
+
+.wedding_follow_title {
+  font-size: 20px !important;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.aother {
+  font-size: 50px !important;
+  margin: 0 5px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
