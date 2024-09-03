@@ -9,6 +9,47 @@
   background-color: var(--sub_title);
 }
 
+.another_text {
+  margin: 20px 0 0px 0;
+  font-weight: 400;
+  font-family: england;
+}
+
+.arrower {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+.arrow {
+  transform: rotate(-30deg);
+  width: 16px;
+  height: 16px;
+  color: var(--sub_title);
+}
+.google {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.google_link {
+  margin: 20px 0;
+  text-decoration: underline;
+}
 .address_title {
   /* color: #fff !important; */
   text-shadow: 1px 1px 10px #f3f0f0;
@@ -64,7 +105,7 @@
     line-height: 150%;
   }
 
-  .address_container{
+  .address_container {
     padding: 10px 0;
   }
 
@@ -94,7 +135,7 @@
 
   .address_loactor {
     width: 100%;
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
 }
 

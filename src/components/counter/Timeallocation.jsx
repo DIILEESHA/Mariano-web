@@ -3,9 +3,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./time.css";
 import cocktail from "../../assets/cocktail.png";
-import letter from "../../assets/letter.png";
+import letter from "../../assets/cake.png";
 import cake from "../../assets/wedding-cake.png";
 import ring from "../../assets/wedding-rings.png";
+import dinner from "../../assets/food.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,7 +89,7 @@ const Timeallocation = () => {
         </div>
         <div className="time_allocated_sub_grid nalx">
           <div className="time_allocated_image_section">
-            <img src={letter} alt="" className="time_allocator_img" />
+            <img src={dinner} alt="" className="time_allocator_img" />
           </div>
           <div className="crcle"></div>
           <h2 className="time_title">Darka</h2>

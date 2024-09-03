@@ -22,11 +22,7 @@ const Header = () => {
     );
 
     // Animate couple name
-    tl.fromTo(
-      ".couple_name",
-      { opacity: 0 },
-      { opacity: 1, duration: 1 }
-    );
+    tl.fromTo(".couple_name", { opacity: 0 }, { opacity: 1, duration: 1 });
 
     // Animate bottom line
     tl.fromTo(
@@ -36,14 +32,8 @@ const Header = () => {
       "-=0.1"
     );
 
-  
-
     // Animate follow title
-    tl.fromTo(
-      ".follow_title",
-      { opacity: 0 },
-      { opacity: 1, duration: 1 }
-    );
+    tl.fromTo(".follow_title", { opacity: 0 }, { opacity: 1, duration: 1 });
   }, []);
 
   return (
@@ -57,27 +47,21 @@ const Header = () => {
         </h2>
       </div>
 
-      <h2 className="couple_name">
-        Eduard
-        <span className="and_operator" style={{ margin: "0px 10px" }}>
-          &
-        </span>
-        Xhensila
-      </h2>
+      <div className="bottomly">
+        <h2 className="couple_name">
+          Eduard
+          <span className="and_operator" style={{ margin: "0px 10px" }}>
+            &
+          </span>
+          Xhensila
+        </h2>
 
-      <div className="bottom_line"></div>
+        <div className="bottom_line"></div>
 
-      <div className="couple_image_card">
-        <img
-          className="couple_image"
-          src="https://i.imgur.com/ES2t1No.jpeg"
-          alt="Eduard and Xhensila wedding image"
-        />
+        <p className="follow_title">
+          me kenaqesi ju ftojm te beheni pjese e dites tone me te bukur!
+        </p>
       </div>
-
-      <p className="follow_title">
-        me kenaqesi ju ftojm te beheni pjese e dites tone me te bukur!
-      </p>
     </div>
   );
 };

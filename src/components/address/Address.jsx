@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./address.css";
+import { FaArrowRight } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,6 +94,16 @@ const Address = () => {
             vitae?
           </p>
         </div>
+      </div>
+
+      <h2 className="another_text">kompleksi golden</h2>
+      <div className="google_link">
+        <a href="" className="google">
+          Google Link
+          <div className="arrower">
+            <FaArrowRight className="arrow" />{" "}
+          </div>
+        </a>
       </div>
     </div>
   );
