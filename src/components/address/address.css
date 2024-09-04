@@ -73,6 +73,7 @@
 
 .address_loactor {
   text-align: center;
+  /* color: var(--para); */
   width: 70%;
   /* color: #fff; */
   line-height: 150%;

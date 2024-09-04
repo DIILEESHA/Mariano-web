@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "serif";
   /* font-family: "hinsatic"; */
-  color: #333;
+  color: #a89273;
 
   /* font-size: 50px; */
 }
@@ -12,11 +12,13 @@
 /* global colors */
 :root {
   --main_title: #333;
-  --sub_title: #f2cb91;
+  --sub_title: #f4e9e8;
   --first_color_palte_of_dress: #f2cb91;
   --second_color_palte_of_dress: #f7c93d;
   --third_color_palte_of_dress: #f6d471;
   --fourth_color_palte_of_dress: #c3aa60;
+
+  --para: #dcddd8;
 }
 /* //caligraphy font declaration */
 
