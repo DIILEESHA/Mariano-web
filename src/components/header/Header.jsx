@@ -35,9 +35,9 @@ const Header = () => {
       <div className="header_container">
         <h2 className="header_title head">
           <span className="calligraphy_font_character head">S</span>
-          <h2 className="aother heado first bu">AVE THE</h2>
+          <h2 className="aothers heado first bu">AVE THE</h2>
           <h2 className="calligraphy_font_character head">D</h2>
-          <h2 className="aother heado bu">ATE</h2>
+          <h2 className="aothers heado bu">ATE</h2>
         </h2>
       </div>
 
