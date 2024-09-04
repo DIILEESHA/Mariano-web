@@ -11,44 +11,10 @@ import dinner from "../../assets/food.png"
 gsap.registerPlugin(ScrollTrigger);
 
 const Timeallocation = () => {
-  useEffect(() => {
-    // GSAP timeline for animations
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".timer",
-        start: "top 100%",
-        end: "bottom 10%",
-        toggleActions: "play none none none",
-        scrub: true,
-        once: true
-      },
-      defaults: { ease: "power2.inOut" },
-    });
 
-    // Animate the title
-    tl.fromTo(
-      ".timetitle",
-      { opacity: 0, y: -10 },
-      { opacity: 1, y: 0, duration: 0.1 }
-    );
-
-    // Animate the bottom line
-    tl.fromTo(
-      ".usedefaultline",
-      { scaleX: 0, transformOrigin: "left center", opacity: 0 },
-      { scaleX: 1, opacity: 1, duration: 0.1, ease: "power2.out" }
-    );
-
-    // Animate each time allocated sub-grid
-    tl.fromTo(
-      ".time_allocated_sub_grid",
-      { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 0.1, stagger: 0.1 }
-    );
 
     // Animate the circles
     
-  }, []);
 
   return (
     <div className="timer">
