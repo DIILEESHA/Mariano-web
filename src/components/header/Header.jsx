@@ -9,23 +9,23 @@ const Header = () => {
     // Animate header title characters
     tl.fromTo(
       ".head .heado",
-      { opacity: 0, y: 10 },
-      { opacity: 1, y: 0, duration: 1, stagger: 0.01 }
+      { opacity: 0, y: 0 },
+      { opacity: 1, y: 0, duration: 0.1, stagger: 0.001 }
     );
 
     // Animate the other text
     tl.fromTo(
       ".head, .heado",
-      { opacity: 0 }, { opacity: 1, duration: 1 });
+      { opacity: 0 }, { opacity: 1, duration: 0.02});
     // Animate couple name
-    tl.fromTo(".couple_name", { opacity: 0 }, { opacity: 1, duration: 1 });
+    tl.fromTo(".couple_name", { opacity: 0 }, { opacity: 1, duration: 0.01 });
 
     // Animate bottom line
     tl.fromTo(
       ".bottom_line",
       { scaleX: 0 },
-      { scaleX: 1, transformOrigin: "center", duration: 0.5 },
-      "-=0.1"
+      { scaleX: 1, transformOrigin: "center", duration: 0.01 },
+      "-=0"
     );
 
     // Animate follow title
