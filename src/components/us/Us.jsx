@@ -4,40 +4,26 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./us.css";
 gsap.registerPlugin(ScrollTrigger);
 const Us = () => {
-    useEffect(() => {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".nalada",
-            start: "top 80%",
-            end: "bottom 80%",
-            toggleActions: "play none none none",
-            scrub: true,
-          },
-          defaults: { ease: "power2.inOut" }, // Smooth easing for a calm effect
-        });
-    
-        // Animate the title with a soft entrance
-        tl.fromTo(
-          ".sus",
-          { opacity: 0, y: 50 },
-          { opacity: 1, y: 0, duration: 1.5 }
-        );
-    
-        // Animate the bottom line with a gentle scaling effect
-        tl.fromTo(
-          ".tuha",
-          { scaleX: 0 },
-          { scaleX: 1, transformOrigin: "center", duration: 1 },
-          "-=1"
-        );
-    
-        // Animate the dress image sections with a gentle fade-in and slight rotation
-        tl.fromTo(
-          ".buildy",
-          { opacity: 0, y: 0, rotation: 5 },
-          { opacity: 1, y: 0, rotation: 0, duration: 1.5, stagger: 0.4 }
-        );
-      }, []);
+  useEffect(() => {
+    // Animate dress grid items (top to bottom)
+    gsap.fromTo(
+      ".gaper, .buildy",
+      { y: -70, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.7,
+        ease: "power1.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".dress_grid",
+          start: "top 80%", // Animation triggers when the top of the dress_grid hits 80% of the viewport height
+          toggleActions: "play none none none", // Animation plays once, no repeats
+          once: true, // Ensures the animation only plays once per session
+        },
+      }
+    );
+  }, []);
 
   return (
     <div className="kodi nalada">

@@ -7,36 +7,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Kodi = () => {
   useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".kodi",
-        start: "top 100%",
-        end: "bottom 10%",
-        toggleActions: "play none none none",
-        scrub: true,
-      },
-      defaults: { ease: "power1.inOut" },
-    });
-
-    // Animate color palette grid
-    tl.fromTo(
-      ".dress_color_palatee_grid",
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 1, stagger: 0.2 }
-    );
-
-    // Animate dress grid items
-    tl.fromTo(
+    // Animate dress grid items (top to bottom)
+    gsap.fromTo(
       ".dress_grid .dress_sub_grid",
-      { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, duration: 1, stagger: 0.3 }
-    );
-
-    tl.fromTo(
-      ".tuha",
-      { scaleX: 0 },
-      { scaleX: 1, transformOrigin: "center", duration: 0.3 },
-      "-=0.5"
+      { y: -40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.7,
+        ease: "power1.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".dress_grid",
+          start: "top 80%", // Animation triggers when the top of the dress_grid hits 80% of the viewport height
+          toggleActions: "play none none none", // Animation plays once, no repeats
+          once: true, // Ensures the animation only plays once per session
+        },
+      }
     );
   }, []);
 

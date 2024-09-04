@@ -20,6 +20,7 @@ const Timeallocation = () => {
         end: "bottom 10%",
         toggleActions: "play none none none",
         scrub: true,
+        once: true
       },
       defaults: { ease: "power2.inOut" },
     });
