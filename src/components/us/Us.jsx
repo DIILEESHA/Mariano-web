@@ -29,12 +29,16 @@ const Us = () => {
   return (
     <div className="kodi nalada">
       <h2 className="header_title">
-        <span className="calligraphy_font_character doda minimize sus ">U</span>
-        <h2 className="aother dap mallz first">s</h2>
+        {/* <span className="calligraphy_font_character doda minimize sus ">U</span> */}
+        <h2 className="aother dap mallz first">Us</h2>
       </h2>
-      <div className="bottom_line tuha"></div>
+      <div className="bottom_line "></div>
 
         <ThreeImage />
+        <p className="address_loactor">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+            vitae?
+          </p>
       <div className=" gaper">
         <div className="dress_sub_grid buildy">
           <div className="dress_image_section">

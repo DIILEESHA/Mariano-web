@@ -100,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
   height: 1px;
   background-color: var(--sub_title);
 }
@@ -148,6 +148,7 @@
 
   .bottom_line {
     width: 50%;
+    margin: 5px 0;
   }
 
   .couple_image {

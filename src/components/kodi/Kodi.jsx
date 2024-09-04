@@ -30,12 +30,12 @@ const Kodi = () => {
   return (
     <div className="kodi">
       <h2 className="header_title">
-        <span className="calligraphy_font_character minimize">D</span>
-        <h2 className="aother dap first">ress</h2>
-        <h2 className="calligraphy_font_character minimize">C</h2>
-        <h2 className="aother dap">ode</h2>
+        {/* <span className="calligraphy_font_character minimize aother">D</span> */}
+        <h2 className="aother dap first">Dress</h2>
+        {/* <h2 className="calligraphy_font_character minimize aother">C</h2> */}
+        <h2 className="aother dap">Code</h2>
       </h2>
-      <div className="bottom_line tuha"></div>
+      <div className="bottom_line "></div>
       <p className="dress_code_para">
         ju lutemi te keni nje veshje dinjitoze dhe modeste, e cila te mos jete
         teper e shurter, e ngushte ose provokuese. Ngjyra e veshjes mund te

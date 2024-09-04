@@ -10,15 +10,13 @@ const Header = () => {
     tl.fromTo(
       ".head .heado",
       { opacity: 0, y: 0 },
-      { opacity: 1, y: 0, duration: 0.1, stagger: 0.001 }
+      { opacity: 1, y: 0, duration: 0.1, stagger: 0.1 }
     );
 
     // Animate the other text
-    tl.fromTo(
-      ".head, .heado",
-      { opacity: 0 }, { opacity: 1, duration: 0.02});
+    tl.fromTo(".head, .heado", { opacity: 0 }, { opacity: 1, duration: 0.1 });
     // Animate couple name
-    tl.fromTo(".couple_name", { opacity: 0 }, { opacity: 1, duration: 0.01 });
+    tl.fromTo(".couple_name", { opacity: 0 }, { opacity: 1, duration: 0.1 });
 
     // Animate bottom line
     tl.fromTo(
@@ -37,9 +35,9 @@ const Header = () => {
       <div className="header_container">
         <h2 className="header_title head">
           <span className="calligraphy_font_character head">S</span>
-          <h2 className="aother heado first">AVE THE</h2>
+          <h2 className="aother heado first bu">AVE THE</h2>
           <h2 className="calligraphy_font_character head">D</h2>
-          <h2 className="aother heado">ATE</h2>
+          <h2 className="aother heado bu">ATE</h2>
         </h2>
       </div>
 

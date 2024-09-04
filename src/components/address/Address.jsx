@@ -63,8 +63,11 @@ const Address = () => {
   return (
     <div className="address_container">
       <h2 className="header_title address_title">
-        <span className="calligraphy_font_character address_title">A</span>
-        <h2 className="aother des first address_title">DRESA</h2>
+        {/* <span className="calligraphy_font_character address_title aother ">A</span> */}
+        <h2 className="aother des first address_title">ADRESA</h2>
+
+
+        {/* <div className="couple_name">Adressa</div> */}
       </h2>
 
       <div className="address_grid">

@@ -69,12 +69,12 @@ const Calendar = () => {
   return (
     <div className="calendar">
       <h2 className="header_title calendar_title">
-        <span className="calligraphy_font_character calendar_title">T</span>
-        <h2 className="aother cal first">ETOR</h2>
+        {/* <span className="calligraphy_font_character calendar_title aother">T</span> */}
+        <h2 className="aother cal first">TETOR</h2>
       </h2>
 
       <h2 className="actual_date">September 2024</h2>
-      <div className="bottom_line mas"></div>
+      <div className="bottom_line "></div>
 
       <div className="calendar_grid">
         <div className="sub_grid_date"></div>

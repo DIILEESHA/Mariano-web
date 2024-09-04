@@ -47,18 +47,14 @@ const Timeallocation = () => {
     );
 
     // Animate the circles
-    tl.fromTo(
-      ".crcle",
-      { scale: 0, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 0.2, stagger: 0.5 }
-    );
+    
   }, []);
 
   return (
     <div className="timer">
       <h2 className="header_title timetitle">
-        <span className="calligraphy_font_character usedefault">P</span>
-        <h2 className="aother first usedfaulter">rogrammi</h2>
+        {/* <span className="calligraphy_font_character usedefault aother">P</span> */}
+        <h2 className="aother first usedfaulter">Programmi</h2>
       </h2>
       <div className="jkob">
         
