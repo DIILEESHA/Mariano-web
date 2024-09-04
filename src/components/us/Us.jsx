@@ -29,13 +29,13 @@ const Us = () => {
   return (
     <div className="kodi nalada">
       <h2 className="header_title">
-        <span className="calligraphy_font_character doda ">U</span>
+        <span className="calligraphy_font_character doda minimize sus ">U</span>
         <h2 className="aother dap mallz first">s</h2>
       </h2>
       <div className="bottom_line tuha"></div>
 
         <ThreeImage />
-      <div className=" gaper">
+      {/* <div className=" gaper">
         <div className="dress_sub_grid buildy">
           <div className="dress_image_section">
             <img
@@ -66,7 +66,7 @@ const Us = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
