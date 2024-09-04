@@ -1,7 +1,6 @@
 import { lazy } from "react";
 import Footer from "../../components/bottom/Footer";
 import Us from "../../components/us/Us";
-import ThreeImage from "../../components/threeimages/ThreeImage";
 
 const Header = lazy(() => import("../../components/header/Header"));
 const Calendar = lazy(() => import("../../components/calendar/Calendar"));
@@ -18,7 +17,7 @@ const Home = () => {
       <Address />
       <Kodi />
       <Time />
-      <ThreeImage />
+      {/* <ThreeImage /> */}
       <Us />
       <Bottom />
       <Footer />

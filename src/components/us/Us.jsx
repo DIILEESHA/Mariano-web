@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./us.css";
+import ThreeImage from "../threeimages/ThreeImage";
 gsap.registerPlugin(ScrollTrigger);
 const Us = () => {
   useEffect(() => {
@@ -28,11 +29,12 @@ const Us = () => {
   return (
     <div className="kodi nalada">
       <h2 className="header_title">
-        <span className="calligraphy_font_character minimize  sus">U</span>
-        <h2 className="aother dap first">s</h2>
+        <span className="calligraphy_font_character doda ">U</span>
+        <h2 className="aother dap mallz first">s</h2>
       </h2>
       <div className="bottom_line tuha"></div>
 
+        <ThreeImage />
       <div className=" gaper">
         <div className="dress_sub_grid buildy">
           <div className="dress_image_section">
@@ -44,13 +46,13 @@ const Us = () => {
           </div>
         </div>
 
+
         <div className="dress_sub_grid  buildy">
           <div className="dress_image_section">
             <img
               src="https://images.pexels.com/photos/1488310/pexels-photo-1488310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="wedding_dress"
               className="dress_imger"
-
             />
           </div>
         </div>
@@ -61,7 +63,6 @@ const Us = () => {
               src="https://images.pexels.com/photos/5095854/pexels-photo-5095854.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="wedding_dress"
               className="dress_imger bulla"
-
             />
           </div>
         </div>
